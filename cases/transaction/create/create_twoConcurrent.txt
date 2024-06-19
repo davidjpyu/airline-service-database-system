@@ -1,0 +1,54 @@
+# Two terminals both attempt to create user1 and user2.
+#
+# Annotation for test harness; it's ok to dump errors to stdout
+#   public_test_case
+#
+# Terminal 1's commands:
+create user1 user1 10000
+create user2 user2 10000
+quit
+*
+#
+# Scenario 1: Terminal 1 succeed in user creations
+Created user user1
+Created user user2
+Goodbye
+|
+#
+# Scenario 2: Terminal 1 fails to create user2, since Terminal 2 already has
+Created user user1
+Failed to create user
+Goodbye
+|
+#
+# Scenario 3: Terminal 1 fails to create both, since Terminal 2 already has
+Failed to create user
+Failed to create user
+Goodbye
+*
+#
+##################### Concurrently executed commands: #####################
+#
+# Terminal 2's commands:
+create user2 user2 10000
+create user1 user1 10000
+quit
+*
+#
+# Scenario 1: Terminal 2 fails to create both, since Terminal 1 already has
+Failed to create user
+Failed to create user
+Goodbye
+|
+#
+# Scenario 2: Terminal 2 fails to create user1, since Terminal 1 already has
+Created user user2
+Failed to create user
+Goodbye
+|
+#
+# Scenario 3: Terminal 2 succeed in user creations
+Created user user2
+Created user user1
+Goodbye
+*

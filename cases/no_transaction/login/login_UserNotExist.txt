@@ -1,0 +1,13 @@
+# Login a non-exist account
+#
+# commands to execute:
+create user1 user1 10
+login user2 user2
+quit
+*
+#
+# expected output:
+Created user user1
+Login failed
+Goodbye
+*

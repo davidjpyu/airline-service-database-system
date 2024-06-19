@@ -1,0 +1,11 @@
+# create a user with existed username
+create user1 user1 100
+create user1 user2 200
+quit
+*
+#
+# expected output:
+Created user user1
+Failed to create user
+Goodbye
+*

@@ -1,0 +1,11 @@
+# create two users
+create user1 user1 100
+create user2 user2 200
+quit
+*
+#
+# expected output:
+Created user user1
+Created user user2
+Goodbye
+*

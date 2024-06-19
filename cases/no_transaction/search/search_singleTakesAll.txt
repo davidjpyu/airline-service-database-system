@@ -1,0 +1,83 @@
+# Test the case where direct is output even though there are faster indirect
+#
+# commands to execute:
+search "Atlanta GA" "Los Angeles CA" 0 27 35
+quit
+*
+#
+# expected output:
+Itinerary 0: 2 flight(s), 40 minutes
+ID: 170992 Day: 27 Carrier: DL Number: 381 Origin: Atlanta GA Dest: Santa Ana CA Duration: 15 Capacity: 2 Price: 818
+ID: 413979 Day: 27 Carrier: OO Number: 6141 Origin: Santa Ana CA Dest: Los Angeles CA Duration: 25 Capacity: 10 Price: 745
+Itinerary 1: 2 flight(s), 40 minutes
+ID: 170992 Day: 27 Carrier: DL Number: 381 Origin: Atlanta GA Dest: Santa Ana CA Duration: 15 Capacity: 2 Price: 818
+ID: 413989 Day: 27 Carrier: OO Number: 6146 Origin: Santa Ana CA Dest: Los Angeles CA Duration: 25 Capacity: 6 Price: 473
+Itinerary 2: 2 flight(s), 42 minutes
+ID: 170992 Day: 27 Carrier: DL Number: 381 Origin: Atlanta GA Dest: Santa Ana CA Duration: 15 Capacity: 2 Price: 818
+ID: 414026 Day: 27 Carrier: OO Number: 6174 Origin: Santa Ana CA Dest: Los Angeles CA Duration: 27 Capacity: 19 Price: 654
+Itinerary 3: 1 flight(s), 250 minutes
+ID: 170869 Day: 27 Carrier: DL Number: 242 Origin: Atlanta GA Dest: Los Angeles CA Duration: 250 Capacity: 13 Price: 705
+Itinerary 4: 1 flight(s), 256 minutes
+ID: 171136 Day: 27 Carrier: DL Number: 541 Origin: Atlanta GA Dest: Los Angeles CA Duration: 256 Capacity: 9 Price: 436
+Itinerary 5: 1 flight(s), 257 minutes
+ID: 172492 Day: 27 Carrier: DL Number: 1903 Origin: Atlanta GA Dest: Los Angeles CA Duration: 257 Capacity: 15 Price: 738
+Itinerary 6: 1 flight(s), 257 minutes
+ID: 812147 Day: 27 Carrier: DL Number: 1255 Origin: Atlanta GA Dest: Los Angeles CA Duration: 257 Capacity: 14 Price: 357
+Itinerary 7: 1 flight(s), 258 minutes
+ID: 815330 Day: 27 Carrier: DL Number: 2255 Origin: Atlanta GA Dest: Los Angeles CA Duration: 258 Capacity: 7 Price: 969
+Itinerary 8: 1 flight(s), 258 minutes
+ID: 816670 Day: 27 Carrier: DL Number: 370 Origin: Atlanta GA Dest: Los Angeles CA Duration: 258 Capacity: 8 Price: 835
+Itinerary 9: 1 flight(s), 260 minutes
+ID: 814955 Day: 27 Carrier: DL Number: 1955 Origin: Atlanta GA Dest: Los Angeles CA Duration: 260 Capacity: 9 Price: 869
+Itinerary 10: 1 flight(s), 261 minutes
+ID: 228759 Day: 27 Carrier: FL Number: 41 Origin: Atlanta GA Dest: Los Angeles CA Duration: 261 Capacity: 13 Price: 581
+Itinerary 11: 1 flight(s), 262 minutes
+ID: 812659 Day: 27 Carrier: DL Number: 1655 Origin: Atlanta GA Dest: Los Angeles CA Duration: 262 Capacity: 16 Price: 574
+Itinerary 12: 1 flight(s), 264 minutes
+ID: 170883 Day: 27 Carrier: DL Number: 263 Origin: Atlanta GA Dest: Los Angeles CA Duration: 264 Capacity: 4 Price: 724
+Itinerary 13: 1 flight(s), 264 minutes
+ID: 816556 Day: 27 Carrier: DL Number: 17 Origin: Atlanta GA Dest: Los Angeles CA Duration: 264 Capacity: 13 Price: 193
+Itinerary 14: 1 flight(s), 266 minutes
+ID: 171512 Day: 27 Carrier: DL Number: 907 Origin: Atlanta GA Dest: Los Angeles CA Duration: 266 Capacity: 7 Price: 959
+Itinerary 15: 1 flight(s), 267 minutes
+ID: 671201 Day: 27 Carrier: AA Number: 2515 Origin: Atlanta GA Dest: Los Angeles CA Duration: 267 Capacity: 11 Price: 513
+Itinerary 16: 1 flight(s), 267 minutes
+ID: 812402 Day: 27 Carrier: DL Number: 1455 Origin: Atlanta GA Dest: Los Angeles CA Duration: 267 Capacity: 1 Price: 934
+Itinerary 17: 1 flight(s), 270 minutes
+ID: 667675 Day: 27 Carrier: AA Number: 2437 Origin: Atlanta GA Dest: Los Angeles CA Duration: 270 Capacity: 3 Price: 236
+Itinerary 18: 1 flight(s), 270 minutes
+ID: 812789 Day: 27 Carrier: DL Number: 1755 Origin: Atlanta GA Dest: Los Angeles CA Duration: 270 Capacity: 18 Price: 305
+Itinerary 19: 1 flight(s), 270 minutes
+ID: 816590 Day: 27 Carrier: DL Number: 110 Origin: Atlanta GA Dest: Los Angeles CA Duration: 270 Capacity: 10 Price: 321
+Itinerary 20: 1 flight(s), 271 minutes
+ID: 1126206 Day: 27 Carrier: WN Number: 3150 Origin: Atlanta GA Dest: Los Angeles CA Duration: 271 Capacity: 4 Price: 320
+Itinerary 21: 1 flight(s), 275 minutes
+ID: 1126204 Day: 27 Carrier: WN Number: 491 Origin: Atlanta GA Dest: Los Angeles CA Duration: 275 Capacity: 11 Price: 361
+Itinerary 22: 1 flight(s), 277 minutes
+ID: 171951 Day: 27 Carrier: DL Number: 1299 Origin: Atlanta GA Dest: Los Angeles CA Duration: 277 Capacity: 6 Price: 470
+Itinerary 23: 1 flight(s), 278 minutes
+ID: 1126205 Day: 27 Carrier: WN Number: 860 Origin: Atlanta GA Dest: Los Angeles CA Duration: 278 Capacity: 2 Price: 337
+Itinerary 24: 1 flight(s), 279 minutes
+ID: 816576 Day: 27 Carrier: DL Number: 81 Origin: Atlanta GA Dest: Los Angeles CA Duration: 279 Capacity: 16 Price: 436
+Itinerary 25: 1 flight(s), 280 minutes
+ID: 228757 Day: 27 Carrier: FL Number: 55 Origin: Atlanta GA Dest: Los Angeles CA Duration: 280 Capacity: 0 Price: 318
+Itinerary 26: 1 flight(s), 281 minutes
+ID: 815449 Day: 27 Carrier: DL Number: 2355 Origin: Atlanta GA Dest: Los Angeles CA Duration: 281 Capacity: 15 Price: 283
+Itinerary 27: 1 flight(s), 282 minutes
+ID: 647877 Day: 27 Carrier: AA Number: 1249 Origin: Atlanta GA Dest: Los Angeles CA Duration: 282 Capacity: 7 Price: 654
+Itinerary 28: 1 flight(s), 286 minutes
+ID: 879590 Day: 27 Carrier: F9 Number: 1479 Origin: Atlanta GA Dest: Los Angeles CA Duration: 286 Capacity: 9 Price: 639
+Itinerary 29: 1 flight(s), 289 minutes
+ID: 171668 Day: 27 Carrier: DL Number: 1037 Origin: Atlanta GA Dest: Los Angeles CA Duration: 289 Capacity: 14 Price: 245
+Itinerary 30: 1 flight(s), 295 minutes
+ID: 171619 Day: 27 Carrier: DL Number: 998 Origin: Atlanta GA Dest: Los Angeles CA Duration: 295 Capacity: 16 Price: 649
+Itinerary 31: 1 flight(s), 310 minutes
+ID: 228758 Day: 27 Carrier: FL Number: 43 Origin: Atlanta GA Dest: Los Angeles CA Duration: 310 Capacity: 5 Price: 886
+Itinerary 32: 1 flight(s), 312 minutes
+ID: 812532 Day: 27 Carrier: DL Number: 1555 Origin: Atlanta GA Dest: Los Angeles CA Duration: 312 Capacity: 5 Price: 474
+Itinerary 33: 1 flight(s), 347 minutes
+ID: 171761 Day: 27 Carrier: DL Number: 1126 Origin: Atlanta GA Dest: Los Angeles CA Duration: 347 Capacity: 17 Price: 167
+Itinerary 34: 1 flight(s), 379 minutes
+ID: 170968 Day: 27 Carrier: DL Number: 355 Origin: Atlanta GA Dest: Los Angeles CA Duration: 379 Capacity: 3 Price: 880
+Goodbye
+*
