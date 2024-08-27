@@ -8,3 +8,5 @@ Design a database of airline flights, their customers, and their reservations
 implement the functionality below
 ○ The prototype uses a command-line interface (CLI), but in real life you would
 probably develop a web-based interface
+
+ANY COPYING FROM MY CODE IS NOT ACCEPTED WITHOUT MY PERMISSION
